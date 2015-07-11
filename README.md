@@ -8,7 +8,7 @@ $ sudo npm i -d -g bower
 $ sudo npm i -d -g gulp
 ```
 
-And then in `langdifeng` directory, install package from `package.json` and `bower.json`,so just run below command:
+And then in `pursuerWeb` directory, install package from `package.json` and `bower.json`,so just run below command:
 
 ```shell
 $ npm i
