@@ -1,0 +1,12 @@
+{
+  "name": "pursuerweb",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "3.3.4",
+    "OwlCarousel": "PursuerDesign/OwlCarousel#~1.3.2"
+  },
+  "devDependencies": {
+    "chai": "~3.0.0",
+    "mocha": "~2.2.5"
+  }
+}

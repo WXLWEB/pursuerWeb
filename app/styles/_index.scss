@@ -1,0 +1,26 @@
+.services{
+  margin-top:-60px;
+  h1{color: $deepblack;
+    text-align: center;
+    font-size: 1.8em;
+  }
+  .icon-app,.icon-ind,.icon-web,.icon-brand{
+    font-size: 180px;
+    line-height: 180px;
+  }
+  .icon-app{
+    color: $red;
+  }
+  .icon-web{
+    color: $orange;
+  }
+  .icon-ind{
+    color: $green;
+  }
+  .icon-brand{
+    color: $lightblue;
+  }
+}
+.demo{
+
+}

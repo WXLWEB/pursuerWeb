@@ -1,0 +1,8 @@
+.idea
+test
+dist
+.tmp
+.sass-cache
+bower_components
+node_modules
+test/bower_components
