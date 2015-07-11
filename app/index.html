@@ -2,75 +2,84 @@
 <html lang="">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>pursuerWeb</title>
-
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="renderer" content="webkit">
+    <title>pursuer&nbsp;|&nbsp;全球化用户体验咨询公司</title>
+    <meta name="keywords" content="设计,普修设计,用户体验设计,移动互联网,用户体验咨询公司,品牌策略,数字营销,ui设计, 视觉设计,交互设计,工业设计,响应式设计,用户研究,市场竞争分析,可用性测试,市场调研,行业分析,创新设计,移动互联网市场调研,智能医疗行业,智能金融">
+    <meta name="description" content="普修设计专注用户体验设计,为客户提供用户研究、市场分析、交互设计、UI界面设计、APP设计、网站设计、响应式网站设计、工业设计、品牌策划以及移动应用开发与测试等全方位解决方案。">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link href="/bower_components/OwlCarousel/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="/bower_components/OwlCarousel/owl-carousel/owl.theme.css" rel="stylesheet">
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    
+
   </head>
   <body>
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">pursuerWeb</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-          
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-          
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+    <!--header-->
+    <div class="header">
+      <nav class="navbar navbar-default navbar-static-top nav-index-bgcolor">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" id="menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><span class="iconfont logo1">&#xe60c;</span></a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li ><a class="active" href="index.html">首页</a></li>
+              <li class="dropdown clearfix" id="dropdown-anli">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">案例</a>
+                <!--<ul class="dropdown-menu" role="menu">-->
+                  <!--<li><a class="border-right" href="anli-ui.html" target="_parent" >App设计</a></li>-->
+                  <!--<li><a href="anli-web.html" target="_parent">网站设计</a></li>-->
+                  <!--<li><a class="border-right" href="anli-gy.html" target="_parent">工业设计</a></li>-->
+                  <!--<li><a href="#">品牌设计</a></li>-->
+                <!--</ul>-->
+              </li>
+              <li class="dropdown clearfix" id="dropdown-about">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">关于我们</a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a class="border-right" href="about.html">关于我们</a></li>
+                  <li><a href="service.html" target="_parent">服务范围</a></li>
+                  <li><a class="border-right" href="#">招贤纳士</a></li>
+                  <li><a href="designresearch.html" target="_parent">设计研究</a></li>
+                </ul>
+              </li>
+              <li class="clearfix hidden-xs"><a id="article-news" href="news.html">行内资讯</a></li>
+              <li class="clearfix"><a href="English/index.html">English</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
         </div>
-      </div>
-
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
-      </div>
+      </nav>
     </div>
-    
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
-
+    <!-- banner-->
+    <div id="banner" class="owl-carousel owl-theme">
+      <div class="item"><img src="assets/fullimage1.jpg" alt="The Last of us"></div>
+      <div class="item"><img src="assets/fullimage2.jpg" alt="GTA V"></div>
+      <div class="item"><img src="assets/fullimage3.jpg" alt="Mirror Edge"></div>
+    </div>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/OwlCarousel/owl-carousel/owl.carousel.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -91,6 +100,7 @@
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
+    <script src="scripts/carousel.js"></script>
     <!-- endbuild -->
   </body>
 </html>
