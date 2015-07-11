@@ -1,5 +1,5 @@
 # pursuerWeb
-#这是一个webapp项目
+#This is a yeoman gulp-webapp project
 ## Install
 This project is a `gulp-webapp`, it depends `bower` and `gulp`. So we should first install them in **global**.
 
