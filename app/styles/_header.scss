@@ -1,3 +1,6 @@
+.header{
+  position: relative;
+}
 .logo1{
   color:$white;
   font-size: 40px;
@@ -20,7 +23,10 @@
 }
 // Default navbar
 .navbar-default {
-  background-color: $navbar-default-bg;
+  background:none;
+  @media (max-width: $screen-sm) {
+    background-color: $white;
+  }
   border:none;
   .navbar-nav {
     > li > a {

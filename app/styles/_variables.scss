@@ -1,6 +1,17 @@
+.mt1em{margin-top:1em;}
+.mt2em{margin-top:2em;}
+.mb1em{margin-bottom:1em;}
+.mb2em{margin-bottom:2em;}
 //color
 $white:             #fff;
 $blue:              #025499;
+$black:              #676969;
+$deepblack:          #000;
+$lightgray:          #C9CACA;
+$red:                #E6262C;
+$orange:             #F08519;
+$green:              #009B4C;
+$lightblue:          #1CA3E6;
 //navbar-default
 $navbar-default-bg:               $blue;
 $navbar-default-link-color:       $white;
@@ -9,3 +20,29 @@ $navbar-default-link-hover-bg:    $white;
 $navbar-default-link-hover-border:$white;
 $navbar-default-link-active-color:$white;
 $navbar-default-link-active-border:$white;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;

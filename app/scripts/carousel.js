@@ -4,7 +4,7 @@
 $(document).ready(function() {
 
   $("#banner").owlCarousel({
-
+    autoPlay : false,
     navigation : true, // Show next and prev buttons
     slideSpeed : 300,
     paginationSpeed : 400,
