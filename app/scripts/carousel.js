@@ -1,8 +1,6 @@
 /**
  * Created by WXL on 7/11/15.
  */
-$(document).ready(function() {
-
   $("#banner").owlCarousel({
     autoPlay : false,
     navigation : true, // Show next and prev buttons
@@ -20,4 +18,3 @@ $(document).ready(function() {
 
   });
 
-});
