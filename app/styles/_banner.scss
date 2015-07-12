@@ -1,9 +1,16 @@
 #banner{
   position: relative;
-  top:-60px;
+  top:0;
+  @media (max-width: $screen-xs-max) {
+    top:60px;
+    height: calc(100% - 60px);
+  }
+  @media (min-width: $screen-sm-min) {
+    top:0;
+    height: 100%;
+  }
   display: block;
   width: 100%;
-  height: 100%;
   .owl-wrapper-outer,.owl-wrapper,.owl-wrapper,.owl-item,.item{
     width: 100%;
     height: 100%;
@@ -68,10 +75,24 @@
     .owl-prev{
       position: absolute;
       left:60px;
+      .icon-left{
+        font-size: 60px;
+        line-height: 60px;
+        color: $white;
+      }
+
     }
     .owl-next{
       position: absolute;
       right:60px;
+      font-size: 60px;
+      line-height: 60px;
+      color: $white;
+      .icon-right{
+        font-size: 60px;
+        line-height: 60px;
+        color: $white;
+      }
     }
   }
 }
