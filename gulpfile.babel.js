@@ -60,7 +60,7 @@ gulp.task('html', ['styles'], () => {
 });
 
 gulp.task('images', () => {
-  return gulp.src('app/images/**/*')
+  return gulp.src('app/contact/**/*')
     .pipe($.if($.if.isFile, $.cache($.imagemin({
       progressive: true,
       interlaced: true,
@@ -72,7 +72,7 @@ gulp.task('images', () => {
       console.log(err);
       this.end();
     })))
-    .pipe(gulp.dest('dist/images'));
+    .pipe(gulp.dest('dist/contact'));
 });
 
 gulp.task('fonts', () => {
@@ -109,7 +109,7 @@ gulp.task('serve', ['styles', 'fonts'], () => {
   gulp.watch([
     'app/*.html',
     'app/scripts/**/*.js',
-    'app/images/**/*',
+    'app/contact/**/*',
     '.tmp/fonts/**/*'
   ]).on('change', reload);
 
@@ -161,7 +161,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['lint', 'html', 'contact', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

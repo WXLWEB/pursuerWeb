@@ -1,7 +1,8 @@
 .mt1em{margin-top:1em;}
 .mt2em{margin-top:2em;}
+.mt60{margin-top:60px;}
 .mb1em{margin-bottom:1em;}
-.mb2em{margin-bottom:2em;}
+.mb60{margin-bottom:60px;}
 //color
 $white:             #fff;
 $blue:              #025499;
@@ -20,6 +21,13 @@ $navbar-default-link-hover-bg:    $white;
 $navbar-default-link-hover-border:$white;
 $navbar-default-link-active-color:$white;
 $navbar-default-link-active-border:$white;
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg:           $white;
+$navbar-default-toggle-icon-bar-bg:        $white;
+$navbar-default-toggle-border-color:       $white;
+$navbar-default-toggle-hover-border-color: $blue;
+$navbar-default-toggle-icon-bar-hover-bg:  $blue;
 
 // Small screen / tablet
 //** Deprecated `$screen-sm` as of v3.0.1
