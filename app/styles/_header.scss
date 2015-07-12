@@ -15,6 +15,8 @@
 }
 
 .navbar-nav {
+  margin-bottom: 0;
+  margin-top:0;
   > li > a {
     padding-top: 20px;
     padding-bottom: 15px;
@@ -24,45 +26,73 @@
 // Default navbar
 .navbar-default {
   background:none;
-  @media (max-width: $screen-sm) {
-    background-color: $white;
+  @media (max-width: $screen-xs-max) {
+    background-color: $blue;
+    .navbar-nav {
+      > li > a {
+        text-align: center;
+        color: $navbar-default-link-color;
+        &:hover,
+        &:focus {
+          color: $blue;
+          background:$white;
+          border-bottom: none;
+        }
+      }
+      > .active > a {
+        &,
+        &:hover,
+        &:focus {
+          color: $blue;
+          background:$white;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  @media (min-width: $screen-sm-min) {
+    .navbar-nav {
+      > li > a {
+        color: $navbar-default-link-color;
+        &:hover,
+        &:focus {
+          color: $navbar-default-link-hover-color;
+          background:none;
+          border-bottom: 4px solid $navbar-default-link-hover-border;
+        }
+      }
+      > .active > a {
+        &,
+        &:hover,
+        &:focus {
+          color: $navbar-default-link-active-color;
+          background:none;
+          border-bottom: 4px solid $navbar-default-link-active-border;
+        }
+      }
+      > .disabled > a {
+        &,
+        &:hover,
+        &:focus {
+          color: $navbar-default-link-disabled-color;
+          background-color: $navbar-default-link-disabled-bg;
+        }
+      }
+    }
   }
   border:none;
-  .navbar-nav {
-    > li > a {
-      color: $navbar-default-link-color;
 
-      &:hover,
-      &:focus {
-        color: $navbar-default-link-hover-color;
-        background:none;
-        border-bottom: 4px solid $navbar-default-link-hover-border;
-      }
-    }
-    > .active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $navbar-default-link-active-color;
-        background:none;
-        border-bottom: 4px solid $navbar-default-link-active-border;
-      }
-    }
-    > .disabled > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $navbar-default-link-disabled-color;
-        background-color: $navbar-default-link-disabled-bg;
-      }
-    }
-  }
 
   .navbar-toggle {
     border-color: $navbar-default-toggle-border-color;
     &:hover,
     &:focus {
       background-color: $navbar-default-toggle-hover-bg;
+      border-color:$navbar-default-toggle-hover-border-color;
+      .icon-bar{
+        background-color: $navbar-default-toggle-icon-bar-hover-bg;
+
+      }
     }
     .icon-bar {
       background-color: $navbar-default-toggle-icon-bar-bg;
@@ -71,7 +101,7 @@
 
   .navbar-collapse,
   .navbar-form {
-    border-color: $navbar-default-border;
+    border:none;
   }
 
   // Dropdown menu items
