@@ -4,4 +4,5 @@ test
 .sass-cache
 bower_components
 node_modules
+dist
 test/bower_components
