@@ -1,4 +1,4 @@
-// generated on 2015-07-06 using generator-gulp-webapp 1.0.1
+// generated on 2015-06-25 using generator-gulp-webapp 1.0.1
 import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
@@ -49,18 +49,18 @@ gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
 gulp.task('html', ['styles'], () => {
   const assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
 
-  return gulp.src('app/*.html')
-    .pipe(assets)
-    .pipe($.if('*.js', $.uglify()))
-    .pipe($.if('*.css', $.minifyCss({compatibility: '*'})))
-    .pipe(assets.restore())
-    .pipe($.useref())
-    .pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true})))
-    .pipe(gulp.dest('dist'));
+return gulp.src('app/*.html')
+  .pipe(assets)
+  .pipe($.if('*.js', $.uglify()))
+  .pipe($.if('*.css', $.minifyCss({compatibility: '*'})))
+  .pipe(assets.restore())
+  .pipe($.useref())
+  .pipe($.if('*.html', $.minifyHtml({conditionals: true, loose: true})))
+  .pipe(gulp.dest('dist'));
 });
 
 gulp.task('images', () => {
-  return gulp.src('app/contact/**/*')
+  return gulp.src('app/images/**/*')
     .pipe($.if($.if.isFile, $.cache($.imagemin({
       progressive: true,
       interlaced: true,
@@ -68,11 +68,11 @@ gulp.task('images', () => {
       // as hooks for embedding and styling
       svgoPlugins: [{cleanupIDs: false}]
     }))
-    .on('error', function (err) {
-      console.log(err);
-      this.end();
-    })))
-    .pipe(gulp.dest('dist/contact'));
+      .on('error', function (err) {
+        console.log(err);
+        this.end();
+      })))
+    .pipe(gulp.dest('dist/images'));
 });
 
 gulp.task('fonts', () => {
@@ -106,16 +106,16 @@ gulp.task('serve', ['styles', 'fonts'], () => {
     }
   });
 
-  gulp.watch([
-    'app/*.html',
-    'app/scripts/**/*.js',
-    'app/contact/**/*',
-    '.tmp/fonts/**/*'
-  ]).on('change', reload);
+gulp.watch([
+  'app/*.html',
+  'app/scripts/**/*.js',
+  'app/images/**/*',
+  '.tmp/fonts/**/*'
+]).on('change', reload);
 
-  gulp.watch('app/styles/**/*.scss', ['styles']);
-  gulp.watch('app/fonts/**/*', ['fonts']);
-  gulp.watch('bower.json', ['wiredep', 'fonts']);
+gulp.watch('app/styles/**/*.scss', ['styles']);
+gulp.watch('app/fonts/**/*', ['fonts']);
+gulp.watch('bower.json', ['wiredep', 'fonts']);
 });
 
 gulp.task('serve:dist', () => {
@@ -141,27 +141,27 @@ gulp.task('serve:test', () => {
     }
   });
 
-  gulp.watch('test/spec/**/*.js').on('change', reload);
-  gulp.watch('test/spec/**/*.js', ['lint:test']);
+gulp.watch('test/spec/**/*.js').on('change', reload);
+gulp.watch('test/spec/**/*.js', ['lint:test']);
 });
 
 // inject bower components
 gulp.task('wiredep', () => {
   gulp.src('app/styles/*.scss')
-    .pipe(wiredep({
-      ignorePath: /^(\.\.\/)+/
-    }))
-    .pipe(gulp.dest('app/styles'));
+  .pipe(wiredep({
+    ignorePath: /^(\.\.\/)+/
+  }))
+  .pipe(gulp.dest('app/styles'));
 
-  gulp.src('app/*.html')
-    .pipe(wiredep({
-      exclude: ['bootstrap-sass'],
-      ignorePath: /^(\.\.\/)*\.\./
-    }))
-    .pipe(gulp.dest('app'));
+gulp.src('app/*.html')
+  .pipe(wiredep({
+    exclude: ['bootstrap-sass'],
+    ignorePath: /^(\.\.\/)*\.\./
+  }))
+  .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'contact', 'fonts', 'extras'], () => {
+gulp.task('build', [ 'html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
