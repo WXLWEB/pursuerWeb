@@ -40,15 +40,35 @@
   }
   .icon-app{
     color: $red;
+    &:hover{
+      color: $white;
+      background-color: $red;
+      border-radius: 90px;
+    }
   }
   .icon-web{
     color: $orange;
+    &:hover{
+      color: $white;
+      background-color: $orange;
+      border-radius: 90px;
+    }
   }
   .icon-ind{
     color: $green;
+    &:hover{
+      color: $white;
+      background-color: $green;
+      border-radius: 90px;
+    }
   }
   .icon-brand{
     color: $lightblue;
+    &:hover{
+      color: $white;
+      background-color: $lightblue;
+      border-radius: 90px;
+    }
   }
 }
 
