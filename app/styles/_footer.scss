@@ -1,0 +1,16 @@
+.footer{
+  margin-bottom: -60px;
+  .iconfont-weibo,.iconfont-qq,.iconfont-weixin,.iconfont-huaban{
+    color:$black;
+    font-size: 60px;
+    line-height: 60px;
+    &:hover{color: $blue;}
+  }
+  .foot-detail{
+    text-align: center;
+    background-color: $deepblack;
+    color: $white;
+    padding: 0.5em 0;
+  }
+}
+

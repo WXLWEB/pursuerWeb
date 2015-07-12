@@ -1,0 +1,78 @@
+.demo{
+  .col-sm-6{
+    padding: 0;
+  }
+  .demo-detail{
+    overflow: hidden;
+    position: relative;
+  }
+  .demo-detail:hover{
+    img{
+      -webkit-transform: scale(1.5);
+      -moz-transform:scale(1.5);
+      transform: scale(1.5);
+    }
+    img{
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-duration: .5s;
+      transition-duration: .5s;
+      -webkit-transition-timing-function: ease-in;
+      transition-timing-function: ease-out;
+      -webkit-transition-delay: .2s;
+      transition-delay: .2s;
+    }
+    .demo-intro{
+      display: block;
+      background-color: rgba(0,0,0,0.6) !important;;
+      opacity: 0.6;
+      -webkit-transition-property: display;
+      transition-property: display;
+      -webkit-transition-duration: 1s;
+      transition-duration: 1s;
+      -webkit-transition-timing-function: ease-in;
+      transition-timing-function: ease-out;
+      -webkit-transition-delay: 1s;
+      transition-delay: 1s;
+    }
+    .txt{
+      display: block;
+
+    }
+  }
+  .demo-intro{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+
+  }
+
+  .txt{
+    -webkit-transition-property: display;
+    transition-property: display;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+    display: none;
+    position: absolute;
+    top:25%;
+    left: 50%;
+    margin-left: -109px;
+    h1{
+      color: $white;
+      font-size: 1.5em;
+      text-align: center;
+    }
+    p{
+      color: $white;
+      font-size: 1.2em;
+      text-align: center;
+    }
+  }
+}

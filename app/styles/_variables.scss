@@ -1,7 +1,8 @@
 .mt1em{margin-top:1em;}
 .mt2em{margin-top:2em;}
+.mt60{margin-top:60px;}
 .mb1em{margin-bottom:1em;}
-.mb2em{margin-bottom:2em;}
+.mb60{margin-bottom:60px;}
 //color
 $white:             #fff;
 $blue:              #025499;
@@ -20,6 +21,30 @@ $navbar-default-link-hover-bg:    $white;
 $navbar-default-link-hover-border:$white;
 $navbar-default-link-active-color:$white;
 $navbar-default-link-active-border:$white;
+
+//navbar-default
+$navbar-default-bule-bg:               $white;
+$navbar-default-blue-link-color:       $black;
+$navbar-default-blue-link-hover-color: $blue;
+$navbar-default-blue-link-hover-bg:    $white;
+$navbar-default-blue-link-hover-border:$blue;
+$navbar-default-blue-link-active-color:$blue;
+$navbar-default-blue-link-active-border:$blue;
+
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg:           $white;
+$navbar-default-toggle-icon-bar-bg:        $white;
+$navbar-default-toggle-border-color:       $white;
+$navbar-default-toggle-hover-border-color: $blue;
+$navbar-default-toggle-icon-bar-hover-bg:  $blue;
+
+// Navbar blue toggle
+$navbar-default-blue-toggle-hover-bg:           $blue;
+$navbar-default-blue-toggle-icon-bar-bg:        $blue;
+$navbar-default-blue-toggle-border-color:       $blue;
+$navbar-default-blue-toggle-hover-border-color: $white;
+$navbar-default-blue-toggle-icon-bar-hover-bg:  $white;
 
 // Small screen / tablet
 //** Deprecated `$screen-sm` as of v3.0.1
