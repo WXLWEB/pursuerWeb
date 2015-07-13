@@ -22,14 +22,12 @@
   <!-- endbuild -->
 
 </head>
-<body>
 <!--[if lt IE 10]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 <!--header-->
 <div class="header">
   <nav class="navbar navbar-default navbar-fixed-top nav-index-bgcolor">
-    <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" id="menu" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -38,35 +36,21 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html"><span class="iconfont logo1">&#xe60c;</span></a>
+        <a class="navbar-brand" href="index.html"></a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
+      <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+        <div class="marker">
+          <span></span>
+        </div>
+        <ul class="nav navbar-nav">
           <li class="active"><a href="index.html">首页</a></li>
-          <li class="dropdown clearfix" id="dropdown-anli">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">案例</a>
-            <!--<ul class="dropdown-menu" role="menu">-->
-            <!--<li><a class="border-right" href="anli-ui.html" target="_parent" >App设计</a></li>-->
-            <!--<li><a href="anli-web.html" target="_parent">网站设计</a></li>-->
-            <!--<li><a class="border-right" href="anli-gy.html" target="_parent">工业设计</a></li>-->
-            <!--<li><a href="#">品牌设计</a></li>-->
-            <!--</ul>-->
-          </li>
-          <li class="dropdown clearfix" id="dropdown-about">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">关于我们</a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a class="border-right" href="about.html">关于我们</a></li>
-              <li><a href="service.html" target="_parent">服务范围</a></li>
-              <li><a class="border-right" href="#">招贤纳士</a></li>
-              <li><a href="designresearch.html" target="_parent">设计研究</a></li>
-            </ul>
-          </li>
-          <li class="clearfix hidden-xs"><a id="article-news" href="news.html">行内资讯</a></li>
-          <li class="clearfix"><a href="English/index.html">English</a></li>
+          <li><a href="#" >案例</a></li>
+          <li><a href="#" >关于我们</a></li>
+          <li><a href="news.html">行内资讯</a></li>
+          <li><a href="English/index.html">English</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
-    </div>
   </nav>
 </div>
 <!-- banner-->
@@ -166,35 +150,36 @@
     </div>
   </div>
 </div>
-<div class="footer">
-  <div class="container">
-    <div class="row mt60 mb60">
-      <div class="col-xs-3 text-center">
+<div class="footer mt60">
+  <div class="conts">
+    <div class="container">
+      <div class="cont1">
         <a href="http://weibo.com/u/5063497886" target="_blank">
           <i class="iconfont iconfont-weibo">&#xe607;</i>
         </a>
       </div>
-      <div class="col-xs-3 text-center">
+      <div class="cont2">
         <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2642003615&site=qq&menu=yes">
           <i class="iconfont iconfont-qq" title="点击这里给我发消息">&#xe606;</i>
         </a>
       </div>
-      <div class="col-xs-3 text-center">
+      <div class="cont3">
         <a href="">
           <i class="iconfont iconfont-weixin">&#xe604;</i>
         </a>
       </div>
-      <div class="col-xs-3 text-center">
+      <div class="cont4">
         <a href="http://huaban.com/cwg9wfwvam/" target="_blank">
           <i class="iconfont iconfont-huaban">&#xe605;</i>
         </a>
       </div>
     </div>
+  </div>
+  <div class="cont-info">
     <div class="row">
       <div class="col-xs-12">
         <h3>北京(总部)</h3>
       </div>
-
       <div class="col-sm-6 col-xs-12">
         <div class="contacts">
           <hr/>
@@ -249,6 +234,7 @@
 <script src="scripts/main.js"></script>
 <script src="scripts/carousel.js"></script>
 <script src="scripts/navbarScroll.js"></script>
+<script src="scripts/navMarker.js"></script>
 <script src="scripts/backTop.js"></script>
 <!-- endbuild -->
 <!--<script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F30d2af07504b9c0eb20c5db9611822ae' type='text/javascript'%3E%3C/script%3E")) </script>-->

@@ -4,6 +4,7 @@
 .mb1em{margin-bottom:1em;}
 .mb60{margin-bottom:60px;}
 //color
+$opacityWhite:      rgba(255,255,255,0.7);
 $white:             #fff;
 $blue:              #025499;
 $black:              #676969;
@@ -15,7 +16,7 @@ $green:              #009B4C;
 $lightblue:          #1CA3E6;
 //navbar-default
 $navbar-default-bg:               $blue;
-$navbar-default-link-color:       $white;
+$navbar-default-link-color:       $opacityWhite;
 $navbar-default-link-hover-color: $white;
 $navbar-default-link-hover-bg:    $white;
 $navbar-default-link-hover-border:$white;

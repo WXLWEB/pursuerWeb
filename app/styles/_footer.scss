@@ -1,4 +1,36 @@
 .footer{
+  .conts{
+    .container{
+      @media (max-width: $screen-xs-max) {
+        width: auto;
+        .row{
+        }
+        .cont1,.cont2,.cont3,.cont4{
+          width: 25%;
+          float:left;
+          text-align: center;
+        }
+      }
+      @media (min-width: $screen-sm-min) {
+        width: 480px;
+        .cont1,.cont2,.cont3,.cont4{
+          width: 25%;
+          float:left;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .cont-info{
+    h3{
+      margin: 60px 0 0;
+    }
+    padding: 0 15px;
+    margin: 0 auto;
+    @media (min-width: $screen-sm-min) {
+      width: 800px;
+    }
+  }
   margin-bottom: -60px;
   .iconfont-weibo,.iconfont-qq,.iconfont-weixin,.iconfont-huaban{
     color:$black;

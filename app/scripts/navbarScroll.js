@@ -5,9 +5,12 @@ $(window).scroll(function() {
   var t = document.documentElement.scrollTop || document.body.scrollTop;
   if(t>0){
     $('.navbar').removeClass('navbar-default').addClass('navbar-default-blue');
-    $('.navbar-brand').empty().append("<img class='img-responsive' src='images/public/logo2.png' style='height: 40px;'/>");
+    $('.navbar-brand').css('background','url("../images/public/logo2.png") top left no-repeat');
+    $('.marker').css('background-color','#025499');
   }else{
     $('.navbar').removeClass('navbar-default-blue').addClass('navbar-default');
-    $('.navbar-brand').empty().append("<span class='iconfont logo1'>&#xe60c;</span>");
+    $('.navbar-brand').css('background','url("../images/public/logo1.png") top left no-repeat');
+    $('.marker').css('background-color','#fff');
+
   }
 });
