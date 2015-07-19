@@ -20,6 +20,15 @@
     margin: 0 auto;
     background-color: $blue;
     vertical-align: middle;
+    .text{
+      height: 180px;
+      position: absolute;
+      left: 50%;
+      top:50%;
+      margin-top:-90px;
+      margin-left: -119px;
+    }
+
     h1,h2,p{color:$white;
       text-align: center;
     }
