@@ -4,7 +4,7 @@
 $(function(){
   var tophtml="<div id=\"izl_rmenu\" class=\"izl-rmenu\">" +
     "<div class=\"btn btn-top\">" +
-    "<i class=\"iconfont iconTop\">&#xe60e;</i>" +
+    "<i class=\"iconfont iconTop\">&#xe608;</i>" +
     "</div>" +
     "</div>";
   $("#top").html(tophtml);
@@ -20,7 +20,7 @@ $(function(){
       );
     },mouseout:function(){
       $('.iconTopword').replaceWith(
-        "<i class=\"iconfont iconTop\">&#xe60e;</i>"
+        "<i class=\"iconfont iconTop\">&#xe608;</i>"
       )}
   });
   var lastRmenuStatus=false;

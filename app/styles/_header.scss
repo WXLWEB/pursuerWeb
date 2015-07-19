@@ -1,16 +1,23 @@
 .header{
   position: relative;
+  transition: 1s;
 }
 .logo1{
   color:$white;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 60px;
+  line-height: 60px;
 }
 .navbar {
   margin-bottom: 0;
+  @media (min-width: $screen-sm-min) {
+    padding: 0 45px;
+  }
   .navbar-brand{
-    height:60px;
-    padding: 10px 15px;
+    height:46px;
+    width: 166px;
+    margin: 17px 15px;
+    background:url("../images/public/logo1.png") top left no-repeat;
+    background-size: cover;
   }
 }
 
@@ -18,16 +25,12 @@
   margin-bottom: 0;
   margin-top:0;
   > li > a {
-    @media (min-width: $screen-sm-min){
-      padding-top: 20px;
-      padding-bottom: 15px;
-      line-height: 20px;
+    padding:0 20px;
+    @media (min-width: $screen-sm-min) {
+      line-height: 80px;
     }
-
-    @media (max-width: $screen-xs-max){
-      padding-top: 10px;
-      padding-bottom: 10px;
-      line-height: 20px;
+    @media (max-width: $screen-xs-max) {
+      line-height: 50px;
     }
   }
 }
@@ -66,7 +69,6 @@
         &:focus {
           color: $navbar-default-link-hover-color;
           background:none;
-          border-bottom: 4px solid $navbar-default-link-hover-border;
         }
       }
       > .active > a {
@@ -75,7 +77,6 @@
         &:focus {
           color: $navbar-default-link-active-color;
           background:none;
-          border-bottom: 4px solid $navbar-default-link-active-border;
         }
       }
       > .disabled > a {
@@ -92,6 +93,7 @@
 
 
   .navbar-toggle {
+    margin-top:20px!important;
     border-color: $navbar-default-toggle-border-color;
     &:hover,
     &:focus {
@@ -148,7 +150,6 @@
         &:focus {
           color: $navbar-default-blue-link-hover-color;
           background:none;
-          border-bottom: 4px solid $navbar-default-blue-link-hover-border;
         }
       }
       > .active > a {
@@ -157,7 +158,6 @@
         &:focus {
           color: $navbar-default-blue-link-active-color;
           background:none;
-          border-bottom: 4px solid $navbar-default-blue-link-active-border;
         }
       }
 
@@ -167,6 +167,7 @@
 
 
   .navbar-toggle {
+    margin-top:20px;
     border-color: $navbar-default-blue-toggle-border-color;
     &:hover,
     &:focus {
@@ -229,4 +230,24 @@
       }
     }
   }
+}
+.navbar-collapse{
+  position: relative;
+}
+//marker
+.marker{
+  position: absolute;
+  bottom:0;
+  height: 3px;
+  left: 0;
+  background:none;
+  background-color: $white;
+  -webkit-transition-property:left;
+  transition-property: left;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
 }
