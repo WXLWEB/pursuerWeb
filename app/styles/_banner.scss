@@ -18,8 +18,8 @@
   .list1{
     height: 100%;
     margin: 0 auto;
-    padding: 20% 0;
     background-color: $blue;
+    vertical-align: middle;
     h1,h2,p{color:$white;
       text-align: center;
     }
@@ -28,7 +28,7 @@
     height: 100%;
     margin: 0 auto;
     padding: 20% 0;
-    background:url("../images/assets/fullimage1.jpg") no-repeat;
+    background:url("../images/assets/fullimage1.jpg") no-repeat center center;
     background-size: cover;
     overflow: hidden;
   }
@@ -36,7 +36,7 @@
     height: 100%;
     margin: 0 auto;
     padding: 20% 0;
-    background:url("../images/assets/fullimage2.jpg") no-repeat;
+    background:url("../images/assets/fullimage2.jpg") no-repeat center center;
     background-size: cover;
     overflow: hidden;
   }
@@ -44,7 +44,7 @@
     height: 100%;
     margin: 0 auto;
     padding: 20% 0;
-    background:url("../images/assets/fullimage3.jpg") no-repeat;
+    background:url("../images/assets/fullimage3.jpg") no-repeat center center;
     background-size: cover;
     overflow: hidden;
   }
