@@ -15,19 +15,14 @@
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-101:before { content: "\e600"; }
-.icon-3:before { content: "\e601"; }
-.icon-4:before { content: "\e602"; }
-.icon-201:before { content: "\e603"; }
-.icon-weixin01:before { content: "\e604"; }
+.icon-shouji01:before { content: "\e600"; }
+.icon-diannao01:before { content: "\e601"; }
+.icon-chilun01:before { content: "\e602"; }
+.icon-dunpai01:before { content: "\e603"; }
+.icon-qq01:before { content: "\e604"; }
 .icon-huaban01:before { content: "\e605"; }
-.icon-qq01:before { content: "\e606"; }
+.icon-weixin01:before { content: "\e606"; }
 .icon-xinlang01:before { content: "\e607"; }
-.icon-fuwufanwei01:before { content: "\e608"; }
-.icon-shejiyanjiu01:before { content: "\e609"; }
-.icon-guanyuwomen01:before { content: "\e60a"; }
-.icon-zhaoxiannashi01:before { content: "\e60b"; }
-.icon-iconfontlogo:before { content: "\e60c"; }
-.icon-iconfontjiantou1:before { content: "\e60d"; }
-.icon-iconfontjiantou2:before { content: "\e60e"; }
-.icon-iconfontjiantou:before { content: "\e60f"; }
+.icon-xiangshang01:before { content: "\e608"; }
+.icon-xiangyou01:before { content: "\e609"; }
+.icon-xiangzuo01:before { content: "\e60a"; }

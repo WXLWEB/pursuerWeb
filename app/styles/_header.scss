@@ -1,5 +1,6 @@
 .header{
   position: relative;
+  transition: 1s;
 }
 .logo1{
   color:$white;
@@ -8,7 +9,9 @@
 }
 .navbar {
   margin-bottom: 0;
-  padding: 0 60px;
+  @media (min-width: $screen-sm-min) {
+    padding: 0 45px;
+  }
   .navbar-brand{
     height:46px;
     width: 166px;
@@ -22,8 +25,13 @@
   margin-bottom: 0;
   margin-top:0;
   > li > a {
-    padding:0 30px;
-    line-height: 80px;
+    padding:0 20px;
+    @media (min-width: $screen-sm-min) {
+      line-height: 80px;
+    }
+    @media (max-width: $screen-xs-max) {
+      line-height: 50px;
+    }
   }
 }
 // Default navbar
@@ -85,6 +93,7 @@
 
 
   .navbar-toggle {
+    margin-top:20px!important;
     border-color: $navbar-default-toggle-border-color;
     &:hover,
     &:focus {
@@ -158,6 +167,7 @@
 
 
   .navbar-toggle {
+    margin-top:20px;
     border-color: $navbar-default-blue-toggle-border-color;
     &:hover,
     &:focus {

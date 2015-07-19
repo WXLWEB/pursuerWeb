@@ -36,7 +36,11 @@
     color:$black;
     font-size: 60px;
     line-height: 60px;
-    &:hover{color: $blue;}
+    border:1px solid $black;
+    border-radius: 60px;
+    &:hover{color: $blue;
+      border:1px solid $blue;
+    }
   }
   .foot-detail{
     text-align: center;

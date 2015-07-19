@@ -9,7 +9,7 @@ $(document).ready(function() {
     slideSpeed : 300,
     paginationSpeed : 400,
     singleItem:true,
-    navigationText : ["<i class='iconfont icon-left hidden-xs'>&#xe60d</i>", "<i class='iconfont icon-right hidden-xs'>&#xe60f</i>"]
+    navigationText : ["<i class='iconfont icon-left hidden-xs'>&#xe60a</i>", "<i class='iconfont icon-right hidden-xs'>&#xe609</i>"]
 
     // "singleItem:true" is a shortcut for:
     // items : 1,

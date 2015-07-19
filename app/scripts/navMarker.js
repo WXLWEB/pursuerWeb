@@ -10,25 +10,23 @@ $(function() {
       left = left+ ws[i];
     }
     $('.marker').css({
-      left:left,
-      width:ws[activeIndex]
+      left:left+20,
+      width:ws[activeIndex]-40
     });
   };
   activeBorder();
   $('.navbar-nav li a').on({
-    mouseover:function(){
+    click:function(){
       index  = $(this).parent().index();
       var left=0;
       for(var i =0; i<index;i++){
         left = left+ ws[i];
       }
       $('.marker').css({
-        left:left,
-        width:ws[index]
+        left:left+20,
+        width:ws[index]-40
       });
-    },mouseout:function(){
-        activeBorder();
-      }
+    }
     }
   );
 });
